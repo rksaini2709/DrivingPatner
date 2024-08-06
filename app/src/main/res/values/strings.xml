@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DirvingPatner</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="car_owner">Vehicle: You have a car that you wish to drive or employ others to drive</string>
+    <string name="bike_owner">Vehicle: You wish to drive a motorcycle or scooter</string>
+    <string name="commerical_owner">Vehicle: You wish to drive a yellow plate motorcycle or scooter</string>
+    <string name="adhar_details">Enter your Aadhaar and we’ll get your information from UIDAI. By sharing your Aadhaar details,you hereby confirm that you have shared such details voluntarily.</string>
+    <string name="pan_details">Enter your PAN Card number and we’ll get the required information from the NSDL, or you can upload your PAN card instead.</string>
+    <string name="rc_details">Enter your Registration Certificate (RC) details and we’ll get your vehicle information. By sharing your RC details, you hereby confirm that you have shared such details voluntarily.</string>
+    <string name="insurance">Make sure photo is not blurred and these details are clearly visible - Model, Vehicle number, Chasis number, Registration Name, Start Date, Expiry Date, Finacier name or Company name. You many need to submit additional photos if your document has multiple pages or sides or if first image was not clear.</string>
+    <string name="vehicle_permit_details">Enter your Vehicle Permit details and we’ll get your permit information. By sharing your Vehicle Permit details, you hereby confirm that you have shared such details voluntarily.</string>
+
+</resources>

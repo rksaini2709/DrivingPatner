@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".DrivingLicenceUpload">
+
+    <Toolbar
+        android:id="@+id/toolbarlicence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkBlue"
+        android:title="City Rider"
+        app:layout_constraintTop_toTopOf="parent"
+        android:navigationIcon="@drawable/baseline_arrow_back"
+        android:titleTextColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your licence number and date of birth"
+                android:textSize="24.00sp"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:layout_marginStart="10.00dp"
+                android:layout_marginTop="10.00dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180.00dp"
+                android:src="@drawable/driving_licence"
+                android:layout_marginTop="15.00dp"
+                android:layout_marginBottom="15.00dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Licence number"
+                android:textSize="18.00sp"
+                android:layout_marginStart="15.00dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_otp"
+                android:hint="DL000000000"
+                android:textAllCaps="true"
+                android:textSize="16.00dp"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:padding="15.00dp"
+                android:layout_marginTop="10.00dp"
+                android:layout_marginHorizontal="15.00dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.00dp"
+                android:text="Date Of Birth"
+                android:textSize="18.00sp"
+                android:layout_marginStart="15.00dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_otp"
+                android:hint="dd/mm/yyyy"
+                android:textSize="16.00dp"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:padding="15.00dp"
+                android:layout_marginTop="10.00dp"
+                android:layout_marginHorizontal="15.00dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.00dp"
+                android:text="Upload Licence (front)"
+                android:textSize="18.00sp"
+                android:layout_marginStart="15.00dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_otp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10.00dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:src="@drawable/image" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="choose from gallery "
+                        android:textColor="@color/DarkBlue"
+                        android:padding="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="or"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" open camera"
+                        android:textColor="@color/DarkBlue"
+                        android:padding="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.00dp"
+                android:text="Upload Licence (back)"
+                android:textSize="18.00sp"
+                android:layout_marginStart="15.00dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_otp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10.00dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:src="@drawable/image" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="choose from gallery "
+                        android:textColor="@color/DarkBlue"
+                        android:padding="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="or"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" open camera"
+                        android:textColor="@color/DarkBlue"
+                        android:padding="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nextBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:layout_marginHorizontal="16.00dp"
+                android:layout_marginTop="30.00dp"
+                android:background="@drawable/bg_btn"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/_20sdp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
