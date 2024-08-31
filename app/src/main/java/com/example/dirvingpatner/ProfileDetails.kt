@@ -1,26 +1,40 @@
 package com.example.dirvingpatner
 
 import android.content.Intent
-import android.os.Build
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.dirvingpatner.databinding.ActivityProfileDetailsBinding
 
 class ProfileDetails : AppCompatActivity() {
+
+    private lateinit var binding: ActivityProfileDetailsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge()
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_profile_details)
+        binding = ActivityProfileDetailsBinding.inflate(layoutInflater)
 
-        val saveBtn = findViewById<Button>(R.id.save_btn)
-        saveBtn.setOnClickListener {
+        setContentView(binding.root)
+
+        binding.saveBtn.setOnClickListener {
             val intent = Intent(this, DriverDocuments::class.java)
             startActivity(intent)
         }
+
+        binding.backBtn.setOnClickListener {
+            finish()
+        }
+
+        binding.cancelBtn.setOnClickListener {
+            finish()
+        }
+
+//        val saveBtn = findViewById<Button>(R.id.save_btn)
+//        saveBtn.setOnClickListener {
+//            val intent = Intent(this, DriverDocuments::class.java)
+//            startActivity(intent)
+//        }
+
     }
 }

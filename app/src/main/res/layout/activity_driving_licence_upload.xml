@@ -9,11 +9,11 @@
     tools:context=".DrivingLicenceUpload">
 
     <Toolbar
-        android:id="@+id/toolbarlicence"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/DarkBlue"
-        android:title="City Rider"
+        android:title="@string/app_name"
         app:layout_constraintTop_toTopOf="parent"
         android:navigationIcon="@drawable/baseline_arrow_back"
         android:titleTextColor="@color/white"/>
@@ -31,7 +31,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Enter your licence number and date of birth"
+                android:text="Enter your Driving licence number and date of birth"
                 android:textSize="24.00sp"
                 android:fontFamily="@font/poppins"
                 android:textStyle="bold"
@@ -48,11 +48,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Licence number"
+                android:text="License number"
                 android:textSize="18.00sp"
                 android:layout_marginStart="15.00dp"/>
 
             <EditText
+                android:id="@+id/licenseNumberEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_otp"
@@ -74,6 +75,7 @@
                 android:layout_marginStart="15.00dp"/>
 
             <EditText
+                android:id="@+id/dobEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_otp"
@@ -89,11 +91,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15.00dp"
-                android:text="Upload Licence (front)"
+                android:text="Upload License (front)"
                 android:textSize="18.00sp"
                 android:layout_marginStart="15.00dp"/>
 
             <LinearLayout
+                android:id="@+id/imageUploaded"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -139,13 +142,14 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="15.00dp"
                 android:layout_marginTop="15.00dp"
-                android:text="Upload Licence (back)"
-                android:textSize="18.00sp"
-                android:layout_marginStart="15.00dp"/>
+                android:text="Upload License (back)"
+                android:textSize="18.00sp" />
 
             <LinearLayout
+                android:id="@+id/imageUploaded2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -190,7 +194,7 @@
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/nextBtn"
+                android:id="@+id/continue_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Continue"

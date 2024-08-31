@@ -1,0 +1,70 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_item1"
+        android:title="Devil"
+        android:icon="@drawable/profile" />
+
+    <item
+        android:id="@+id/nav_item2"
+        android:title="Ravana"
+        android:icon="@drawable/profile" />
+
+    <item
+        android:id="@+id/nav_item3"
+        android:title="RK Saini"
+        android:icon="@drawable/profile" />
+
+    <item
+        android:id="@+id/nav_item4"
+        android:title="Ritik Saini"
+        android:icon="@drawable/profile" />
+
+    <item
+        android:id="@+id/nav_item5"
+        android:title="Bharat Saini"
+        android:icon="@drawable/profile" />
+
+</menu>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    tools:showIn="navigation_view"-->
+<!--    android:id="@+id/nav_menu">-->
+
+<!--            <item-->
+<!--                android:id="@+id/nav_item1"-->
+<!--                android:title="Rk Saini"-->
+<!--                android:titleTextAppearance="@style/NavDrawerTextStyle"-->
+<!--                android:icon="@drawable/profile_image"/>-->
+
+<!--            <item-->
+<!--                android:id="@+id/nav_item2"-->
+<!--                android:title="Ritik Saini"-->
+<!--                android:titleTextAppearance="@style/NavDrawerTextStyle"-->
+<!--                android:icon="@drawable/profile_image"/>-->
+
+<!--            <item-->
+<!--                android:id="@+id/nav_item3"-->
+<!--                android:title="Bharat Saini"-->
+<!--                android:titleTextAppearance="@style/NavDrawerTextStyle"-->
+<!--                android:icon="@drawable/profile_image"/>-->
+
+<!--&lt;!&ndash;    <group android:checkableBehavior="single">&ndash;&gt;-->
+<!--&lt;!&ndash;        <item&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/nav_item1"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:title="Rk Saini"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:titleTextAppearance="@style/NavDrawerTextStyle"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <item&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/nav_item2"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:title="Ritik Saini"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:titleTextAppearance="@style/NavDrawerTextStyle"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <item&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/nav_item3"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:title="Bharat Saini"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:titleTextAppearance="@style/NavDrawerTextStyle"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    </group>&ndash;&gt;-->
+
+<!--</menu>-->

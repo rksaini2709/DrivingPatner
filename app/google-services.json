@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "862176998526",
+    "project_id": "dirvingpatner",
+    "storage_bucket": "dirvingpatner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862176998526:android:4695def837c5e28c43542f",
+        "android_client_info": {
+          "package_name": "com.example.dirvingpatner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuaIN2-NMYnLChioqgtAIvUvMbmH7uNxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Toolbar -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/DarkBlue"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:title=""
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_switchbtn"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Switch
+                    android:id="@+id/btnSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" OFF DUTY "
+                    android:textSize="15sp"
+                    android:padding="12.00dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Fragment and Coordinator Layout inside FrameLayout -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_20sdp"
+                    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15.00dp"
+                            android:layout_marginBottom="10.00dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="80.00dp"
+                                    android:layout_height="80.00dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="10.00dp"
+                                    android:src="@drawable/profile" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10.00dp"
+                                    android:layout_marginBottom="20.00dp"
+                                    android:layout_marginEnd="10.00dp"
+                                    android:layout_gravity="center"
+                                    android:textSize="16sp"
+                                    android:text="Customer Name" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Noida Sector 16"
+                                    android:drawableLeft="@drawable/pickup"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:layout_marginTop="20.00dp"
+                                    android:layout_marginStart="10.00dp"
+                                    android:textSize="16.00sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="IGI AirPort New Delhi"
+                                    android:drawableLeft="@drawable/drop"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:layout_marginTop="10.00dp"
+                                    android:layout_marginStart="10.00dp"
+                                    android:textSize="16.00sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10.00dp"
+                                    android:layout_marginTop="10.00dp"
+                                    android:drawableLeft="@drawable/rupees"
+                                    android:textSize="18sp"
+                                    android:text="299" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/arrow_up" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/acceptBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_btn"
+                            android:backgroundTint="@color/green"
+                            android:paddingVertical="14dp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_marginHorizontal="10.00dp"
+                            android:layout_marginTop="10.00dp"
+                            android:text="Accept this Ride"
+                            android:textSize="18.00dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/rejectBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_btn"
+                            android:backgroundTint="#E53935"
+                            android:paddingVertical="14.00dp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="10.00dp"
+                            android:text="Reject This Ride"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:textSize="18.00dp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

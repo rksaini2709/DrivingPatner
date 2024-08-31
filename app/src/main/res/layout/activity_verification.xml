@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     tools:context=".Verification">
 
     <ScrollView
@@ -25,7 +26,6 @@
 
 
             <LinearLayout
-                android:id="@+id/back_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -35,10 +35,10 @@
                 android:paddingBottom="10.00dp">
 
                 <ImageView
+                    android:id="@+id/back_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/angle_left"
-                    />
+                    android:src="@drawable/angle_left" />
 
 <!--                <TextView-->
 <!--                    android:layout_width="wrap_content"-->
@@ -77,113 +77,34 @@
                 android:textSize="16.00sp" />
 
 
-            <LinearLayout
-                android:id="@+id/PinView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20.00dp"
-                android:layout_marginRight="20.00dp"
-                android:orientation="horizontal"
-                android:weightSum="6"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
 
-                <EditText
-                    android:id="@+id/otp1"
-                    android:layout_width="50.00dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5.00dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_otp"
-                    android:gravity="center"
-                    android:inputType="number"
-                    android:maxLength="1"
-                    android:padding="10.00dp"
-                    android:textColor="@color/black"
-                    android:textSize="20.00sp" />
-
-                <EditText
-                    android:id="@+id/otp2"
-                    android:layout_width="50.00dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5.00dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_otp"
-                    android:gravity="center"
-                    android:inputType="number"
-                    android:maxLength="1"
-                    android:padding="10.00dp"
-                    android:textColor="@color/black"
-                    android:textSize="20.00sp" />
-
-                <EditText
-                    android:id="@+id/otp3"
-                    android:layout_width="50.00dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5.00dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_otp"
-                    android:gravity="center"
-                    android:inputType="number"
-                    android:maxLength="1"
-                    android:padding="10.00dp"
-                    android:textColor="@color/black"
-                    android:textSize="20.00sp" />
-
-                <EditText
-                    android:id="@+id/otp4"
-                    android:layout_width="50.00dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5.00dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_otp"
-                    android:gravity="center"
-                    android:inputType="number"
-                    android:maxLength="1"
-                    android:padding="10.00dp"
-                    android:textColor="@color/black"
-                    android:textSize="20.00sp" />
-
-                <EditText
-                    android:id="@+id/otp5"
-                    android:layout_width="50.00dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5.00dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_otp"
-                    android:gravity="center"
-                    android:inputType="number"
-                    android:maxLength="1"
-                    android:padding="10.00dp"
-                    android:textColor="@color/black"
-                    android:textSize="20.00sp" />
-
-                <EditText
-                    android:id="@+id/otp6"
-                    android:layout_width="50.00dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5.00dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_otp"
-                    android:gravity="center"
-                    android:inputType="number"
-                    android:maxLength="1"
-                    android:padding="10.00dp"
-                    android:textColor="@color/black"
-                    android:textSize="20.00sp" />
-
-            </LinearLayout>
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20.00dp"
+                android:layout_marginTop="10.00dp"
                 android:layout_marginBottom="60.00dp"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="vertical">
+
+                <com.chaos.view.PinView
+                    android:id="@+id/pinView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:itemCount="6"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    app:cursorWidth="2dp"
+                    app:itemHeight="50dp"
+                    app:itemRadius="5dp"
+                    app:itemWidth="48dp"
+                    app:lineWidth="2dp"
+                    android:focusableInTouchMode="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="30.00dp"
+                    android:filterTouchesWhenObscured="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -222,7 +143,6 @@
                     app:layout_constraintStart_toStartOf="parent" />
 
             </LinearLayout>
-
 
         </LinearLayout>
 

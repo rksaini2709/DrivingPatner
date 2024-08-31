@@ -14,4 +14,9 @@
     <string name="insurance">Make sure photo is not blurred and these details are clearly visible - Model, Vehicle number, Chasis number, Registration Name, Start Date, Expiry Date, Finacier name or Company name. You many need to submit additional photos if your document has multiple pages or sides or if first image was not clear.</string>
     <string name="vehicle_permit_details">Enter your Vehicle Permit details and we’ll get your permit information. By sharing your Vehicle Permit details, you hereby confirm that you have shared such details voluntarily.</string>
 
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+
 </resources>
